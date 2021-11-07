@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  height: 70px;
+  width: 100vw;
+  background: black;
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.link__menu {
+  color: #ffffff;
+  list-style: none;
+  text-decoration: none;
+}
+
+.main {
+  width: 100vw;
+  padding: 60px 0;
+}
+
+.hero {
+  width: 100%;
+  height: 342px;
+}
+
+.gap-50 {
+  gap: 50px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.category__title {
+  font-size: 40px;
+  color: #f2d64b;
+}
+
+.divider {
+  width: 50px;
+  height: 2px;
+  background-color: #000000;
+  border: none;
+}
+
+.card {
+  width: 255px;
+  height: 384px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.img-pet {
+  max-width: 285px;
+  max-height: 325px;
+  border-radius: 15px;
+}
+
+.call-to-action {
+  height: 44px;
+  width: 100%;
+  background: white;
+  border: 1px solid #000000;
+  outline: none;
+  border-radius: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.padding-5 {
+  padding: 5px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.h-half {
+  height: 50%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.call-to-action:hover {
+  transition: 0.2s;
+  transform: scale(1.05);
+  border: 3px solid #f2d64b;
+  background: black;
+  color: #f2d64b;
+}
+
+.call-to-action:hover::after {
+  content: " ❤️";
+}
