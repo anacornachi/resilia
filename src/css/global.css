@@ -127,12 +127,11 @@ ul {
 }
 
 .img-pet {
-  min-height: 255px;
-  min-width: 255px;
   max-width: 255px;
   max-height: 255px;
   border-radius: 15px;
   object-fit: cover;
+  height: 70%;
 }
 
 .call-to-action {
