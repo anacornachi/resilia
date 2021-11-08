@@ -7,6 +7,7 @@ html,
 body {
   box-sizing: border-box;
   scroll-behavior: smooth;
+
   font-family: "Poppins", sans-serif;
 }
 
@@ -14,11 +15,17 @@ header {
   height: 70px;
   width: 100vw;
   background: black;
+  box-shadow: 1px 4px 50px 3px rgba(0, 0, 0, 0.4);
 }
 
 .container {
   max-width: 80rem;
   margin: auto;
+}
+
+.banner {
+  width: 100%;
+  object-fit: contain;
 }
 
 .flex {
@@ -56,6 +63,11 @@ ul {
   color: #ffffff;
   list-style: none;
   text-decoration: none;
+  transition: 0.2s;
+}
+
+.link__menu:hover {
+  border-bottom: 1px solid white;
 }
 
 .main {
@@ -66,6 +78,7 @@ ul {
 .hero {
   width: 100%;
   height: 342px;
+  display: block;
 }
 
 .gap-50 {
@@ -82,6 +95,10 @@ ul {
 
 .gap-20 {
   gap: 20px;
+}
+
+.gap-15 {
+  gap: 15px;
 }
 
 .gap-40 {
@@ -103,26 +120,32 @@ ul {
 .card {
   width: 255px;
   height: 384px;
-  border: 1px solid #000000;
+  border: 1px solid #d1d1d1;
   border-radius: 15px;
   padding: 15px;
+  transition: 0.5s;
 }
 
 .img-pet {
-  max-width: 285px;
-  max-height: 325px;
+  min-height: 255px;
+  min-width: 255px;
+  max-width: 255px;
+  max-height: 255px;
   border-radius: 15px;
+  object-fit: cover;
 }
 
 .call-to-action {
   height: 44px;
   width: 100%;
   background: white;
-  border: 1px solid #000000;
+  border: 1px solid #d1d1d1;
   outline: none;
   border-radius: 15px;
-  margin-top: 10px;
+  cursor: pointer;
   font-weight: bold;
+  font-size: 16px;
+  transition: 0.4s;
 }
 
 .padding-5 {
@@ -146,7 +169,6 @@ ul {
 }
 
 .call-to-action:hover {
-  transition: 0.2s;
   transform: scale(1.05);
   border: 3px solid #f2d64b;
   background: black;
@@ -155,4 +177,90 @@ ul {
 
 .call-to-action:hover::after {
   content: " ❤️";
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 4px 50px 3px rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+  height: 60px;
+  background: black;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 80px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    padding: 5px 0;
+  }
+  .gap-50 {
+    gap: 20px;
+  }
+  .cards {
+    gap: 25px;
+    padding: 15px 0;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0 50px;
+  }
+  .hero {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    transform: scale(0.65);
+  }
+  .hero {
+    display: none;
+  }
+
+  .main {
+    padding: 35px 0;
+  }
+
+  .cards {
+    padding: 25px 0;
+  }
+
+  .container {
+    margin: 0 8px;
+  }
+
+  .gap-50 {
+    gap: 5px;
+  }
+  .copy {
+    transform: scale(0.75);
+  }
+  .category__title {
+    font-size: 30px;
+  }
+  .call-to-action {
+    height: 65px;
+  }
+  .info-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  li {
+    display: none;
+  }
 }
